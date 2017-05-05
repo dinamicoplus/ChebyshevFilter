@@ -50,10 +50,10 @@ def FilterChev(a_p,a_s,w_s):
 		g.append(T[0][0])
 		Dn0 = Dn1
 		Dn1 = T[1]
-	g.append(T[0][1])
+	gn = T[0][1]
 	g = numpy.array(g).real
 	plt.show()
-	return g
+	return g, gn
 
 def Filter_Order(a_p,a_s,w_s):
 	n = numpy.ceil(numpy.arccosh(numpy.sqrt((10**(a_s/10)-1)/(10**(a_p/10)-1)))/numpy.arccosh(w_s))
